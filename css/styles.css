@@ -10947,8 +10947,8 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/img/Tetons.jpeg");
-  /* background-image: url("../assets/img/Tetons.jpeg");  */
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../assets/img/golf.jpg");
+  /* background-image: url("../assets/img/golf.jpg");  */
   /* changing the background image on the homepage */
   background-repeat: no-repeat;
   background-attachment: scroll;
