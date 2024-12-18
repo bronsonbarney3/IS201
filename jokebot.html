@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Bot</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb 40%, #2575fc 100%);
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #ffeb3b;
+        }
+
+        #jokeDisplay {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            min-height: 50px; /* Ensures the container does not collapse */
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff1744;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../Index.html">Home</a> |
+            <a href="../resume.html">Resume</a> |
+            <a href="joke-bot.html" class="active">Joke Bot</a> |
+             <a href="Tableau.html">Tableau</a>
+        </nav>
+    </header>
+
+    <h1>Welcome to the Joke Bot</h1>
+    <div id="jokeDisplay">Click the button to see a joke!</div>
+    <button onclick="tellJoke()">Tell me a joke</button>
+
+    <script>
+        const jokes = [
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "Why couldn't the bicycle stand up by itself? It was two tired.",
+            "What do you call a fake noodle? An impasta.",
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+            "How does a penguin build its house? Igloos it together.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "What do you get when you cross a snowman and a vampire? Frostbite.",
+            "Why don’t scientists trust the stairs? They’re always up to something."
+        ];
+
+        function tellJoke() {
+            const jokeElement = document.getElementById('jokeDisplay');
+            jokeElement.style.opacity = 0;
+            setTimeout(() => {
+                jokeElement.textContent = jokes[Math.floor(Math.random() * jokes.length)];
+                jokeElement.style.opacity = 1;
+            }, 2000); // Wait for the fade out, then change the text and fade in
+        }
+    </script>
+</body>
+</html>

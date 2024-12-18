@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:small;
+    color: black;
+    text-align: left;
+  }
+  
+h1 {
+    margin: 1rem 0;
+    color: blueviolet;
+    border: 0;
+    font-size:xx-large;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+
+<style>
+    .uniform-height-img {
+        height: 200px; /* or any specific height you prefer */
+        width: auto; /* maintain aspect ratio */
+        object-fit: cover; /* this will cover the area without stretching the image */
+        display: block;
+        margin: 0 auto; /* center the image in the column if there's remaining space */
+
+h2{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    color: black;
+    text-align: center;
+  }
+li{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ol {
+    padding-left: 500px; /* Adjust this value as needed to center the list */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.backg {
+    background-color: aquamarine;
+    align-items: center;
+}
+
+.taby{
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.testing{
+    background-color: beige;
+}
+
+.backtop{
+    font-size: x-large;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
